@@ -1,0 +1,52 @@
+{
+  "name": "Spokebook",
+  "short_name": "Spokebook",
+  "description": "Your bike's service record — written down, verified, never lost.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0C0B10",
+  "theme_color": "#0C0B10",
+  "lang": "en",
+  "categories": ["sports", "lifestyle", "utilities"],
+  "icons": [
+    {
+      "src": "/icons/icon-16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/home.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Spokebook home screen"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "My bikes",
+      "url": "/",
+      "description": "View your registered bikes"
+    }
+  ]
+}

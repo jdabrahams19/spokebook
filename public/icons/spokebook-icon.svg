@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"  stop-color="#181330"/>
+      <stop offset="100%" stop-color="#0A0814"/>
+    </linearGradient>
+
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#F0D27E"/>
+      <stop offset="55%"  stop-color="#C9A04E"/>
+      <stop offset="100%" stop-color="#96762E"/>
+    </linearGradient>
+
+    <linearGradient id="rim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#F5DC96"/>
+      <stop offset="100%" stop-color="#B08838"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ══ BACKGROUND ══ -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+
+  <!-- ══ BICYCLE WHEEL ══ -->
+  <g transform="translate(256,256)">
+
+    <!-- Tyre — thick outer ring -->
+    <circle r="164" fill="none" stroke="url(#rim)" stroke-width="30"/>
+
+    <!-- Rim — thinner ring inset from the tyre -->
+    <circle r="130" fill="none" stroke="url(#gold)" stroke-width="12"/>
+
+    <!-- Spokes — 12, radiating from hub to rim, bold enough to survive scaling -->
+    <g stroke="url(#gold)" stroke-width="9" stroke-linecap="round">
+      <line x1="0" y1="-34" x2="0" y2="-124"/>
+      <line x1="0" y1="34"  x2="0" y2="124"/>
+      <line x1="34" y1="0"  x2="124" y2="0"/>
+      <line x1="-34" y1="0" x2="-124" y2="0"/>
+      <line x1="24" y1="-24" x2="88" y2="-88"/>
+      <line x1="-24" y1="-24" x2="-88" y2="-88"/>
+      <line x1="24" y1="24"  x2="88" y2="88"/>
+      <line x1="-24" y1="24" x2="-88" y2="88"/>
+    </g>
+
+    <!-- Hub -->
+    <circle r="38" fill="url(#gold)"/>
+    <circle r="38" fill="none" stroke="#0A0814" stroke-width="5"/>
+    <circle r="12" fill="#0A0814"/>
+
+  </g>
+
+</svg>
