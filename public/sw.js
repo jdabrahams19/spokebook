@@ -1,4 +1,4 @@
-const CACHE_NAME = "spokebook-v1";
+const CACHE_NAME = "cadenzo-v1";
 
 // Files to cache immediately on install (the app shell)
 const PRECACHE_ASSETS = [
@@ -73,14 +73,14 @@ self.addEventListener("fetch", (event) => {
 // ── Push notifications ─────────────────────────────────────────────────────────
 self.addEventListener("push", (event) => {
   const data = event.data?.json() ?? {};
-  const title = data.title || "Spokebook";
+  const title = data.title || "Cadenzo";
   const options = {
     body: data.body || "You have a new notification.",
     icon: "/icons/icon-192.png",
     badge: "/icons/icon-32.png",
     data: { url: data.url || "/" },
     vibrate: [100, 50, 100],
-    tag: data.tag || "spokebook-general",
+    tag: data.tag || "cadenzo-general",
     renotify: true,
   };
   event.waitUntil(self.registration.showNotification(title, options));
