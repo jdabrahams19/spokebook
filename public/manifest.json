@@ -1,6 +1,6 @@
 {
-  "name": "Spokebook",
-  "short_name": "Spokebook",
+  "name": "Cadenzo",
+  "short_name": "Cadenzo",
   "description": "Your bike's service record — written down, verified, never lost.",
   "start_url": "/",
   "display": "standalone",
@@ -39,7 +39,7 @@
       "sizes": "390x844",
       "type": "image/png",
       "form_factor": "narrow",
-      "label": "Spokebook home screen"
+      "label": "Cadenzo home screen"
     }
   ],
   "shortcuts": [
